@@ -41,9 +41,11 @@
 
 >copy & paste
 
-`composer require laravel/breeze --dev`
+```
+composer require laravel/breeze --dev
 
-`php artisan breeze:install`
+php artisan breeze:install
+```
 
 
 # Before migration you need:
@@ -54,14 +56,21 @@
 5. change DB_DATABASE=laravel <- database name you created just Now
 6. run bellow command
 
-`php artisan migrate`
-`npm install`
-`npm run dev`
+```
+php artisan migrate
+
+npm install
+
+npm run dev
+```
 
 7. If design breaks then
 
-`npm run build`
-`npm run dev`
+```
+npm run build
+
+npm run dev
+```
 
 # How To create Controllers in Laravel:
 1. run this command
@@ -70,19 +79,24 @@
 
 3. Go to Http>controller>>WebsiteController Openfile
 
-`class WebsiteController extends Controller{
-    `public function __construct(){`
-      `  $this->middleware('auth'); // <-- Jodi login sara dukhte na deya hoy
-    `}`
+```
+class WebsiteController extends Controller{
+    public function __construct(){
+      $this->middleware('auth'); // <-- Jodi login sara dukhte na deya hoy
+    }
 
-      `public function index(){`
-      `echo "Welcome MO Rakib!";`
-    `}`
-`}`
+    public function index(){
+      echo "Welcome MO Rakib!";
+    }
+}
+```
 
 # How to make route:
 1. Openfile route>web.php
 2. Go To [Routing](https://laravel.com/docs/10.x/routing)
 3. copy&paste this:
-`use App\Http\Controllers\WebsiteController;`
-`Route::get('anyName', [WebsiteController::class, 'index']);`
+
+```
+use App\Http\Controllers\WebsiteController;
+Route::get('anyName', [WebsiteController::class, 'index']);
+```
