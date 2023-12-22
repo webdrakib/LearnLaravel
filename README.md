@@ -19,10 +19,10 @@
 
 > Important Folder to know:
 1. app>Http>>Controllers,Middleware
-2. database>migration
+2. database>migration,seeder
 3. resources>views>>index.html file
-4. route>create URL
-5. public>All css & Javascript
+4. route>web.php>>create URL
+5. public>All css & Javascript files
 
 # How to run Laravel Server:
 
