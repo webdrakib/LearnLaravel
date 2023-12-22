@@ -71,13 +71,13 @@
 3. Go to Http>controller>>WebsiteController Openfile
 
 `class WebsiteController extends Controller{
-    `public function __construct(){
+    `public function __construct(){`
       `  $this->middleware('auth'); // <-- Jodi login sara dukhte na deya hoy
-    `}
+    `}`
 
-   ` public function index(){
-   `    echo "Welcome MO Rakib!";
-    `}
+      `public function index(){`
+      `echo "Welcome MO Rakib!";`
+    `}`
 `}`
 
 # How to make route:
